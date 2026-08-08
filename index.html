@@ -170,6 +170,9 @@
   .osszeg-gomb .valaszt .nyil{transition:transform .2s ease}
   .osszeg-gomb:hover .valaszt .nyil{transform:translateX(4px)}
   .osszeg-gomb.kiemelt{border-color:var(--zold);background:#fff}
+  .osszeg-gomb.egyetlen{grid-column:1 / -1;align-items:center;text-align:center;padding:30px 26px}
+  .osszeg-gomb.egyetlen .ar{font-size:2.3rem;margin-top:4px}
+  .osszeg-gomb.egyetlen .valaszt{font-size:1.05rem}
   .cimke-pipa{
     position:absolute;top:-11px;right:16px;background:var(--zold);color:#fff;
     font-size:.7rem;font-weight:800;letter-spacing:.5px;text-transform:uppercase;
@@ -288,35 +291,19 @@
 <section class="adomany" id="adomany">
   <div class="adomany-kartya">
     <div class="adomany-fej">
-      <h2>Válaszd ki a támogatásod összegét</h2>
-      <p>Minden forint számít. Válaszd ki azt az összeget, amellyel a leginkább hozzá tudsz járulni az igazság hangjához.</p>
+      <h2>Támogasd az igazság hangját</h2>
+      <p>Egyetlen kattintás, és máris részese vagy a mozgalomnak. Minden forint az igazságot építi.</p>
     </div>
     <div class="osszegek">
-      <!-- A linkeket cseréld le a saját fizetési oldaladra (Stripe / PayPal / banki link). -->
-      <a class="osszeg-gomb" href="#" data-osszeg="750">
-        <span class="ar">750 Ft</span>
-        <span class="cimke">Egy jelképes, de fontos lépés</span>
-        <span class="valaszt">Ezt választom <span class="nyil" aria-hidden="true">→</span></span>
-      </a>
-      <a class="osszeg-gomb kiemelt" href="#" data-osszeg="3500">
-        <span class="cimke-pipa">Legnépszerűbb</span>
-        <span class="ar">3.500 Ft</span>
-        <span class="cimke">Havi egy kávé ára az igazságért</span>
-        <span class="valaszt">Ezt választom <span class="nyil" aria-hidden="true">→</span></span>
-      </a>
-      <a class="osszeg-gomb" href="#" data-osszeg="6000">
-        <span class="ar">6.000 Ft</span>
-        <span class="cimke">Komoly támogatás a hálózatnak</span>
-        <span class="valaszt">Ezt választom <span class="nyil" aria-hidden="true">→</span></span>
-      </a>
-      <a class="osszeg-gomb" href="#" data-osszeg="10000">
-        <span class="ar">10.000 Ft</span>
-        <span class="cimke">Erőteljesen viszed előre az ügyet</span>
-        <span class="valaszt">Ezt választom <span class="nyil" aria-hidden="true">→</span></span>
+      <a class="osszeg-gomb kiemelt egyetlen" href="https://go.vvbhx.online/click" target="_blank" rel="noopener" data-osszeg="798">
+        <span class="cimke-pipa">Csatlakozom</span>
+        <span class="ar">798 Ft</span>
+        <span class="cimke">A te támogatásod viszi előre a mozgalmat</span>
+        <span class="valaszt">Adományozok most <span class="nyil" aria-hidden="true">→</span></span>
       </a>
     </div>
     <div class="adomany-labjegyzet">
-      Más összeget szeretnél adományozni? <a href="#">Írj nekünk</a>, és segítünk. Minden támogatás önkéntes és átlátható.
+      Minden támogatás önkéntes és átlátható. Köszönjük, hogy velünk tartasz! 🇭🇺
     </div>
   </div>
 </section>
@@ -340,8 +327,7 @@
         <div class="fb-tartalom">
           <div class="fb-bubi">
             <span class="fb-nev">Kovács Anna <span class="pipa" aria-hidden="true">✓</span></span>
-            <p>Most adományoztam <b>3 500 Ft</b>-ot! 🇭🇺 Végre valaki hangot ad az igazságnak. Sok erőt nektek, veletek vagyunk!</p>
-            <span class="fb-osszeg">3 500 Ft adományozva</span>
+            <p>Most csatlakoztam! 🇭🇺 Végre valaki hangot ad az igazságnak. Sok erőt nektek, veletek vagyunk!</p>
           </div>
           <div class="fb-meta"><span class="b">Tetszik</span><span class="b">Válasz</span><span class="ido">2 ó</span>
             <span class="reakcio"><span class="ikonok"><span class="r" style="background:#1877f2">👍</span><span class="r" style="background:#f33e58">❤️</span></span> 214</span>
@@ -354,8 +340,7 @@
         <div class="fb-tartalom">
           <div class="fb-bubi">
             <span class="fb-nev">Nagy Péter</span>
-            <p><b>10 000 Ft</b> tőlem. Elegem volt abból, hogy a közpénzemből fizetik a propagandát. Ez egy tiszta ügy — hajrá!</p>
-            <span class="fb-osszeg">10 000 Ft adományozva</span>
+            <p>Én is beszálltam! Elegem volt abból, hogy a közpénzemből fizetik a propagandát. Ez egy tiszta ügy — hajrá!</p>
           </div>
           <div class="fb-meta"><span class="b">Tetszik</span><span class="b">Válasz</span><span class="ido">45 p</span>
             <span class="reakcio"><span class="ikonok"><span class="r" style="background:#1877f2">👍</span><span class="r" style="background:#f7b125">😮</span></span> 98</span>
@@ -368,8 +353,7 @@
         <div class="fb-tartalom">
           <div class="fb-bubi">
             <span class="fb-nev">Szabó Katalin</span>
-            <p><b>6 000 Ft</b>-tal szálltam be, és meg is osztottam az ismerőseimmel. Jusson el minél többekhez az igazság! 💪</p>
-            <span class="fb-osszeg">6 000 Ft adományozva</span>
+            <p>Támogattam, és meg is osztottam az ismerőseimmel. Jusson el minél többekhez az igazság! 💪</p>
           </div>
           <div class="fb-meta"><span class="b">Tetszik</span><span class="b">Válasz</span><span class="ido">1 ó</span>
             <span class="reakcio"><span class="ikonok"><span class="r" style="background:#f33e58">❤️</span><span class="r" style="background:#1877f2">👍</span></span> 156</span>
@@ -382,8 +366,7 @@
         <div class="fb-tartalom">
           <div class="fb-bubi">
             <span class="fb-nev">Tóth Gábor</span>
-            <p>Diákként csak <b>750 Ft</b>-ot tudtam most adni, de minden forint számít. Büszke vagyok, hogy én is részese lehetek ennek!</p>
-            <span class="fb-osszeg">750 Ft adományozva</span>
+            <p>Diákként is fontos, hogy támogassam — minden forint számít. Büszke vagyok, hogy én is részese lehetek ennek!</p>
           </div>
           <div class="fb-meta"><span class="b">Tetszik</span><span class="b">Válasz</span><span class="ido">3 ó</span>
             <span class="reakcio"><span class="ikonok"><span class="r" style="background:#f33e58">❤️</span><span class="r" style="background:#1877f2">👍</span></span> 302</span>
@@ -396,8 +379,7 @@
         <div class="fb-tartalom">
           <div class="fb-bubi">
             <span class="fb-nev">Horváth Eszter <span class="pipa" aria-hidden="true">✓</span></span>
-            <p>Én <b>20 000 Ft</b>-tal támogattam. Ez a mi országunk — közösen kell megvédenünk az igazságot és a szabadságot! ❤️🤍💚</p>
-            <span class="fb-osszeg">20 000 Ft adományozva</span>
+            <p>Én is támogattam! Ez a mi országunk — közösen kell megvédenünk az igazságot és a szabadságot! ❤️🤍💚</p>
           </div>
           <div class="fb-meta"><span class="b">Tetszik</span><span class="b">Válasz</span><span class="ido">5 ó</span>
             <span class="reakcio"><span class="ikonok"><span class="r" style="background:#f33e58">❤️</span><span class="r" style="background:#1877f2">👍</span></span> 421</span>
@@ -410,8 +392,7 @@
         <div class="fb-tartalom">
           <div class="fb-bubi">
             <span class="fb-nev">Varga Zsófia</span>
-            <p>Havonta fogom támogatni! Az első <b>3 500 Ft</b> már ment is. Köszönöm, hogy végre van egy tiszta, közpénzmentes hang! 🙏</p>
-            <span class="fb-osszeg">3 500 Ft adományozva</span>
+            <p>Rendszeresen támogatni fogom! Köszönöm, hogy végre van egy tiszta, közpénzmentes hang! 🙏</p>
           </div>
           <div class="fb-meta"><span class="b">Tetszik</span><span class="b">Válasz</span><span class="ido">6 ó</span>
             <span class="reakcio"><span class="ikonok"><span class="r" style="background:#1877f2">👍</span><span class="r" style="background:#f33e58">❤️</span></span> 187</span>
