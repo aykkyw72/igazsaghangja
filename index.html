@@ -320,7 +320,7 @@
       <span class="donate-badge">Csatlakozz a mozgalomhoz</span>
       <div class="donate-amount">798<span class="ft"> Ft</span></div>
       <div class="donate-note">A te támogatásod viszi előre a mozgalmat</div>
-      <a class="donate-btn" href="https://www.craftybyte42.com/6ZR9ZK/3XTNQBGF/?sub1={clickid}&sub4=igazsag%20hangja%20tamogatas&sub5=https%3A%2F%2Ftisza.azigazsaghangja.online%2Flogo.png" target="_blank" rel="noopener">Adományozok 798 Ft-ot <span class="nyil" aria-hidden="true">→</span></a>
+      <a class="donate-btn" href="https://www.craftybyte42.com/6ZR9ZK/3XTNQBGF/?sub1={clickid}&sub4=igazsag%20hangja%20tamogatas&sub5=https%3A%2F%2Ftisza.azigazsaghangja.online%2Flogo.png">Adományozok 798 Ft-ot <span class="nyil" aria-hidden="true">→</span></a>
     </div>
     <div class="adomany-labjegyzet">
       Minden támogatás önkéntes és átlátható. Köszönjük, hogy velünk tartasz! 🇭🇺
@@ -450,20 +450,9 @@
     var szazalek = Math.min(100, (osszegyult / cel) * 100); // 17.54
     var sav = document.getElementById('savBelso');
     window.requestAnimationFrame(function(){
-      window.setTimeout(function(){ sav.style.width = szazalek + '%'; }, 250);
+      window.setTimeout(function(){ if (sav) sav.style.width = szazalek + '%'; }, 250);
     });
   })();
-
-  // CTA gombok — jelenleg placeholder. Cseréld le a href-et a valós fizetési linkre.
-  document.querySelectorAll('.osszeg-gomb').forEach(function(g){
-    g.addEventListener('click', function(e){
-      if (g.getAttribute('href') === '#') {
-        e.preventDefault();
-        var osszeg = g.getAttribute('data-osszeg');
-        alert('Adományozás: ' + Number(osszeg).toLocaleString('hu-HU') + ' Ft\n\n(Ez egy demó gomb — cseréld le a fizetési linkedre a kódban.)');
-      }
-    });
-  });
 </script>
 </body>
 </html>
